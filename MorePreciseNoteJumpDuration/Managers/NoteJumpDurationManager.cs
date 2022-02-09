@@ -32,7 +32,7 @@ namespace MorePreciseNoteJumpDuration.Managers
 
             float min_value = noteJumpDurationTypeSettingsDropdown.values[0];
             float max_value = noteJumpDurationTypeSettingsDropdown.values[noteJumpDurationTypeSettingsDropdown.values.Length - 1];
-            noteJumpDurationTypeSettingsDropdown.SetField("_formattingString", "{000} ms");
+            noteJumpDurationTypeSettingsDropdown.SetField("_formattingString", "{0:0.000} s");
             noteJumpDurationTypeSettingsDropdown.values = GetValues(min_value, max_value);
 
         }
@@ -43,7 +43,7 @@ namespace MorePreciseNoteJumpDuration.Managers
             int j = 0;
             for (float i = min_value; i <= max_value; i += _config.Step)
             {
-                values[j] = (float) Math.Round(i * 1000);
+                values[j] = i;
                 j++;
             }
             return values;

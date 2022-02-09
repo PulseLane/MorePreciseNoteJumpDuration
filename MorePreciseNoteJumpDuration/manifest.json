@@ -3,12 +3,12 @@
   "id": "MorePreciseNoteJumpDuration",
   "name": "MorePreciseNoteJumpDuration",
   "author": "PulseLane",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Makes the NoteJumpFixedDuration setting for static NoteJumpType more precise.",
   "gameVersion": "1.19.0",
   "dependsOn": {
-    "BSIPA": "^4.0.5",
-    "SiraUtil":  "^3.0.0"
+    "BSIPA": "^4.2.1",
+    "SiraUtil": "^3.0.3"
   },
   "features": []
 }
